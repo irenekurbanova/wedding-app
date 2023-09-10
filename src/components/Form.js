@@ -13,8 +13,8 @@ const url = `https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessag
 const Form = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredSurname, setEnteredSurname] = useState("");
-  const [enteredNameIsValid, setEnteredNameIsValid] = useState(false);
-  const [enteredSurnameIsValid, setEnteredSurnameIsValid] = useState(false);
+  // const [enteredNameIsValid, setEnteredNameIsValid] = useState(false);
+  // const [enteredSurnameIsValid, setEnteredSurnameIsValid] = useState(false);
 
   const [formSubmited, setFormSubmited] = useState(false);
 
