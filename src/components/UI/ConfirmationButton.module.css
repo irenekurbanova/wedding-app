@@ -1,0 +1,60 @@
+.init .button {
+  display: block;
+  position: relative;
+  width: fit-content;
+  height: 100%;
+}
+
+.wrapper .button {
+  font-size: 16px;
+  display: block;
+  padding: 7.9px;
+  position: relative;
+}
+
+.button {
+  background-image: linear-gradient(120deg, #a9ceff 0%, #a9ceff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
+  background-position: 0 100%;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  transition: background-size 0.1s ease-in, border-radius 0.2s ease-in;
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.89em;
+  margin: 0.09em 0;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: auto;
+  z-index: 1;
+}
+.button:disabled {
+  min-width: 0;
+}
+
+.button:not([disabled]):focus,
+.button:not([disabled]):hover {
+  background-size: 100%;
+  color: #000;
+  text-shadow: 0 0 0.7em #fff;
+  border-radius: 23px;
+}
+
+/* @media (width <= 575px) {
+  .button {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+} */

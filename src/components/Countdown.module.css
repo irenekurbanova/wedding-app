@@ -1,0 +1,22 @@
+.countdown {
+  position: absolute;
+  bottom: 0.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.countdown .clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clock > span {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.clock > p {
+  margin: 0;
+}

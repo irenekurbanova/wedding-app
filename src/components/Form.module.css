@@ -1,0 +1,53 @@
+.form {
+  background-color: white;
+  background-image: url(../../img/o523.png);
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10px;
+  font-family: arial, helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px;
+  padding: 0.5rem 2rem 2rem 2rem;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+label {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #a8ceff;
+  background-color: #f8f7f7fc;
+  outline: none;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  margin: 0 0 8px 0;
+}
+
+button:disabled {
+  background: #eee;
+  color: #999;
+  box-shadow: none;
+}
+
+.error {
+  color: red;
+}

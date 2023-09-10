@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+  background-image: url(../../img/paperSand.png);
+  background-color: #f2f2f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer a {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.footer a:hover {
+  color: #656a30;
+}

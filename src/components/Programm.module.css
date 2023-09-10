@@ -1,0 +1,53 @@
+.programm {
+  background-image: url(../../img/paperSand.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (width <= 575px) {
+  .action {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.table {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.table caption {
+  font-family: "Caravan", sans-serif;
+  padding-top: 4rem;
+  font-size: 6rem;
+}
+
+.table tr > th {
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.table tr > td {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.table .address {
+  font-size: 1.5rem;
+  font-style: italic;
+}

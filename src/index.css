@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "CormorantInfant";
+  src: url("../fonts/CormorantInfant-Regular.ttf") format("truetype"),
+    url("../fonts/CormorantInfant-SemiBold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "Caravan";
+  src: url("../fonts/Caravan.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "CormorantInfant", "Caravan", sans-serif;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  margin: 0 auto;
+  font-family: "CormorantInfant";
+  overflow: visible;
+}
+
+p {
+  margin: 0;
+}

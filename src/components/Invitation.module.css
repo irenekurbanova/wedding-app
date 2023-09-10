@@ -1,0 +1,70 @@
+.invitation {
+  z-index: 1000;
+  background-image: url(../../img/newRoseBg.png);
+  background-position: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.invitation .inv {
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.names {
+  background-image: url("../../img/ampersandFancy3.png");
+  background-size: 30%;
+  background-position-y: 40%;
+  background-position-x: 40%;
+  background-repeat: no-repeat;
+  font-family: "Caravan";
+  display: flex;
+  gap: 1rem;
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+.ilya {
+  align-self: right;
+}
+
+.mary {
+  align-self: left;
+  position: relative;
+}
+
+.date {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  text-transform: uppercase;
+}
+
+.date .weekday,
+.time {
+  font-size: 1.8rem;
+}
+
+.date .detailed {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  font-size: 2.8rem;
+}
+
+.borderGradient {
+  border-image-source: linear-gradient(to left, #a38335, #f2d876);
+}
