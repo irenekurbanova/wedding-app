@@ -23,7 +23,7 @@ const Programm = (props) => {
             <td>
               <span>Ужин</span>
               <span className={styles.address}>
-                Адрес: ул. Гороховая 40, Греми
+                Адрес: "Греми", ул. Гороховая 40
               </span>
             </td>
           </tr>
@@ -41,7 +41,7 @@ const Programm = (props) => {
           startTime="18:40"
           endTime="23:30"
           timeZone="currentBrowser"
-          buttonStyle="text"
+          buttonStyle="default"
         />
         <ConfirmationButton type="button" onClick={props.onShowForm}>
           Подтвердить присутствие
