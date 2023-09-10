@@ -34,8 +34,9 @@ label {
 input {
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #a8ceff;
-  background-color: #f8f7f7fc;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #f5f5f5;
+  border-radius: 6px;
   outline: none;
   font-size: 1.1rem;
   box-sizing: border-box;
