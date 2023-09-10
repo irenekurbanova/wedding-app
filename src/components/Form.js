@@ -47,9 +47,6 @@ const Form = (props) => {
       return;
     }
 
-    console.log(enteredName);
-    console.log(enteredSurname);
-
     sendDataToTelegram(`${enteredName} ${enteredSurname}`);
 
     setEnteredName("");
