@@ -27,7 +27,6 @@ const Form = (props) => {
   };
 
   const sendDataToTelegram = (data) => {
-    console.log(data);
     fetch(`${url}?chat_id=${REACT_APP_CHAT_ID}&text=${data}`, {
       method: "POST",
     }).then(
