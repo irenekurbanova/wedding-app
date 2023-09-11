@@ -8,7 +8,7 @@ import {
 import { useState, Fragment } from "react";
 import styles from "./Form.module.css";
 
-const url = `https://api.telegram.org/${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage`;
+const url = `https://api.telegram.org/bot${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage`;
 
 const Form = (props) => {
   const [enteredName, setEnteredName] = useState("");
