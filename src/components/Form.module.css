@@ -1,10 +1,10 @@
 .form {
-  background-color: white;
-  background-image: url(../../img/o523.png);
+  background-image: url(../../img/o523cut3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   box-shadow: rgba(0 0 0 / 50%) 2px 5px 18px -1px,
     rgba(0 0 0 / 45%) 2px 2px 10px -3px;
-  background-size: cover;
-  background-position: bottom;
   border-radius: 10px;
   font-family: arial, helvetica, sans-serif;
   display: flex;
