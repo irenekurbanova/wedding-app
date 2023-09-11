@@ -1,11 +1,3 @@
-.init .button {
-  margin-top: 0.45em;
-  display: block;
-  position: relative;
-  width: fit-content;
-  height: 100%;
-}
-
 .wrapper .button {
   font-size: 16px;
   display: block;
