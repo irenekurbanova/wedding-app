@@ -63,19 +63,21 @@ const Form = (props) => {
         {!formSubmited && (
           <Fragment>
             <h2>Заполните форму</h2>
-            <label htmlFor="name">Имя</label>
+            <label htmlFor="fname">Имя</label>
             <input
               type="text"
-              id="name"
+              name="fname"
               onChange={nameInputChangeHandler}
               value={enteredName}
+              autoComplete="given-name"
             />
-            <label htmlFor="surname">Фамилия</label>
+            <label htmlFor="lname">Фамилия</label>
             <input
               type="text"
-              id="surname"
+              name="lname"
               onChange={surnameInputChangeHandler}
               value={enteredSurname}
+              autoComplete="family-name"
             />
             <ConfirmationButton type="submit">Отправить</ConfirmationButton>
           </Fragment>
