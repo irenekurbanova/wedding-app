@@ -2,7 +2,8 @@ import { Fragment, useState } from "react";
 import Invitation from "./components/Invitation";
 import Programm from "./components/Programm";
 import Footer from "./components/Footer";
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import RegistrationForm from "./components/Form";
 
 function App() {
   const [formIsShown, setFormIsShown] = useState(false);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <Fragment>
-      {formIsShown && <Form onClose={hideFormHandler} />}
+      {formIsShown && <RegistrationForm onClose={hideFormHandler} />}
       <Invitation />
       <Programm onShowForm={showFormHandler} />
       <Footer />

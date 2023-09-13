@@ -7,6 +7,7 @@ const ConfirmationButtonButton = (props) => {
         type={props.type}
         className={styles.button}
         onClick={props.onClick}
+        disabled={props.disabled}
       >
         <span>{props.children}</span>
       </button>

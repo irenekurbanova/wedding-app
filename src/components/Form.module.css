@@ -50,7 +50,3 @@ button:disabled {
   color: #999;
   box-shadow: none;
 }
-
-.error {
-  color: red;
-}
