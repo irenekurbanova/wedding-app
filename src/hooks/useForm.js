@@ -1,10 +1,6 @@
 import { useState, useCallback } from "react";
-import {
-  REACT_APP_TELEGRAM_BOT_TOKEN,
-  REACT_APP_CHAT_ID,
-} from "../components/config/config";
 
-const url = `https://api.telegram.org/bot${REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage`;
+const url = `https://api.telegram.org/bot${process.env.REACT_APP_TELEGRAM_BOT_TOKEN}/sendMessage`;
 
 function useForm(formObj) {
   const [form, setForm] = useState(formObj);
@@ -89,7 +85,7 @@ function useForm(formObj) {
 
       try {
         const response = await fetch(
-          `${url}?chat_id=${REACT_APP_CHAT_ID}&text=${textMessage}`,
+          `${url}?chat_id=${process.env.REACT_APP_CHAT_ID}&text=${textMessage}`,
           {
             method: "POST",
           }
