@@ -24,31 +24,33 @@
 }
 
 .table {
+  width: 80%;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .table caption {
-  font-family: "Caravan", sans-serif;
+  font-family: "Caravan";
   padding-top: 4rem;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .table tr > th {
-  padding: 3rem;
-  font-size: 2rem;
+  padding-right: 1.5rem;
+  font-size: 3rem;
+  font-weight: 100;
 }
 
 .table tr > td {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .table .address {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-style: italic;
 }

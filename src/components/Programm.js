@@ -12,7 +12,7 @@ const Programm = (props) => {
           <tr>
             <th>18:40</th>
             <td>
-              <span>Торжественная роспись ЗАГС</span>
+              <span>Торжественная роспись</span>
               <span className={styles.address}>
                 Дворец бракосочетания №1, Английская наб., 28
               </span>
@@ -22,7 +22,7 @@ const Programm = (props) => {
             <th>20:00</th>
             <td>
               <span>Ужин</span>
-              <span className={styles.address}>"Греми", ул. Гороховая 40</span>
+              <span className={styles.address}>Большая Конюшенная ул. 31</span>
             </td>
           </tr>
         </tbody>
