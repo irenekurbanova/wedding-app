@@ -10,6 +10,7 @@ function InputField(props) {
     isValid,
     value,
     autoComplete,
+    touched,
   } = props;
 
   return (
@@ -19,8 +20,10 @@ function InputField(props) {
         type={type}
         name={name}
         value={value}
+        onClick={handleChange}
         onChange={handleChange}
         autoComplete={autoComplete}
+        touched={touched}
       ></input>
       <div className={styles.error}>
         {errorMessage && !isValid && <span>{errorMessage}</span>}

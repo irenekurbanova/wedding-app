@@ -16,8 +16,17 @@ const AddressMap = (props) => {
           }}
           modules={["control.ZoomControl", "control.FullscreenControl"]}
         >
-          <Placemark defaultGeometry={[59.934018, 30.293809]} />
-          <Placemark defaultGeometry={[59.93626, 30.321959]} />
+          <Placemark
+            geometry={{ type: "Point", coordinates: [59.934018, 30.293809] }}
+            options={{
+              preset: "islands#redGlyphIcon",
+              iconGlyph: "heart",
+              iconGlyphColor: "red",
+            }}
+          />
+          <Placemark
+            geometry={{ type: "Point", coordinates: [59.93626, 30.321959] }}
+          />
         </Map>
       </div>
     </YMaps>

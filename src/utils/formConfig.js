@@ -1,5 +1,10 @@
 import InputField from "../components/Input";
-import { requiredRule, minLengthRule, maxLengthRule } from "./inputValidation";
+import {
+  requiredRule,
+  minLengthRule,
+  maxLengthRule,
+  lettersRule,
+} from "./inputValidation";
 
 /**
  * creates and returns object representation of form field
@@ -48,17 +53,19 @@ export const registrationForm = {
   firstName: {
     ...createFormFieldConfig("Имя", "firstName", "text", "given-name"),
     validationRules: [
-      requiredRule("Имя"),
+      requiredRule("Поле"),
       minLengthRule("Имя", 2),
       maxLengthRule("Имя", 25),
+      lettersRule("Имя"),
     ],
   },
   lastName: {
     ...createFormFieldConfig("Фамилия", "lastName", "text", "family-name"),
     validationRules: [
-      requiredRule("Фамилия"),
+      requiredRule("Поле"),
       minLengthRule("Фамилия", 3),
       maxLengthRule("Фамилия", 25),
+      lettersRule("Фамилия"),
     ],
   },
 };

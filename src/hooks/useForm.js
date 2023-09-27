@@ -8,8 +8,16 @@ function useForm(formObj) {
 
   function renderFormInputs() {
     return Object.values(form).map((inputObj) => {
-      const { value, label, errorMessage, valid, renderInput } = inputObj;
-      return renderInput(onInputChange, value, valid, errorMessage, label);
+      const { value, label, errorMessage, valid, renderInput, touched } =
+        inputObj;
+      return renderInput(
+        onInputChange,
+        value,
+        valid,
+        errorMessage,
+        label,
+        touched
+      );
     });
   }
 
@@ -46,6 +54,7 @@ function useForm(formObj) {
 
       // mark input field as touched
       inputObj.touched = true;
+
       setForm({ ...form, [name]: inputObj });
     },
     [form, isInputFieldValid]
