@@ -2,9 +2,7 @@ import styles from "./Invitation.module.css";
 import Countdown from "./Countdown";
 import { Fragment } from "react";
 
-let deadline = "October, 25, 2023";
-
-const Invitation = (props) => {
+const Invitation = () => {
   return (
     <Fragment>
       <section className={styles.invitation}>
@@ -22,7 +20,7 @@ const Invitation = (props) => {
           </p>
           <p className={styles.time}>18:40</p>
         </div>
-        <Countdown deadline={deadline} />
+        <Countdown />
       </section>
     </Fragment>
   );

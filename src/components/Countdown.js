@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./Countdown.module.css";
 
-let deadline = "October, 25, 2023";
+const deadline = "October, 25, 2023";
 
 const Countdown = () => {
   const [weeks, setWeeks] = useState(0);

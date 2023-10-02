@@ -3,7 +3,7 @@ import styles from "./Map.module.css";
 
 const API_KEY = process.env.REACT_APP_YANDEX_API_KEY;
 
-const AddressMap = (props) => {
+const AddressMap = () => {
   return (
     <YMaps query={{ apikey: API_KEY }}>
       <div className={styles.map}>

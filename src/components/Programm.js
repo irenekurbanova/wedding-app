@@ -6,8 +6,8 @@ import ConfirmationButton from "./UI/ConfirmationButton";
 const Programm = (props) => {
   return (
     <section className={styles.programm}>
+      <h3>Свадебное расписание</h3>
       <table className={styles.table}>
-        <caption>Свадебное расписание</caption>
         <tbody>
           <tr>
             <th>18:40</th>

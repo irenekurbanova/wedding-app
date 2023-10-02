@@ -2,7 +2,6 @@ import { Fragment, useState } from "react";
 import Invitation from "./components/Invitation";
 import Programm from "./components/Programm";
 import Footer from "./components/Footer";
-// import Form from "./components/Form";
 import RegistrationForm from "./components/Form";
 
 function App() {

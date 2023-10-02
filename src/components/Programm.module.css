@@ -1,5 +1,5 @@
 .programm {
-  background-image: url(../../img/paperSand.png);
+  background-image: url(../../img/paperSand.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,11 +9,11 @@
 }
 
 .action {
+  padding: 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 5px;
 }
 
 @media (width <= 575px) {
@@ -29,10 +29,11 @@
   padding-bottom: 2rem;
 }
 
-.table caption {
+h3 {
+  text-align: center;
   font-family: "Caravan";
-  padding-top: 4rem;
-  font-size: 8rem;
+  color: #333333;
+  font-size: 9rem;
 }
 
 .table tr > th {
@@ -45,7 +46,6 @@
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: top;
   gap: 1rem;
   font-size: 2.8rem;
 }
