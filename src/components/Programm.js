@@ -1,7 +1,9 @@
-import styles from "./Programm.module.css";
+import { lazy } from "react";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
-import AddressMap from "./Map";
 import ConfirmationButton from "./UI/ConfirmationButton";
+import styles from "./Programm.module.css";
+
+const MapComponent = lazy(() => import("./Map"));
 
 const Programm = (props) => {
   return (
@@ -45,7 +47,7 @@ const Programm = (props) => {
           Подтвердить присутствие
         </ConfirmationButton>
       </div>
-      <AddressMap />
+      <MapComponent />
     </section>
   );
 };
